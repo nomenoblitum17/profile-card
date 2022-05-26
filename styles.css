@@ -1,0 +1,103 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    background: hsl(185, 75%, 39%);
+}
+
+.card {
+    position: absolute;
+    width: 350px;
+    height: 365px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;   
+    background: #fff;
+    z-index: 100;
+    border-radius: 10px;
+}
+
+.card-main {
+    position: relative;
+    height: 75%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+
+.card-main-background {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; ;
+}
+
+.card-main-picture {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border: 5px solid #fff;
+    border-radius: 100%;
+}
+
+.card-main p {
+   text-align: center;
+   margin-bottom: 10%;
+   color: hsl(227, 10%, 46%);
+}
+
+.card-main p b {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25%;
+}
+
+.card-stats p {
+    text-align:center;
+    color:hsl(227, 10%, 46%)
+}
+
+.card-stats p b {
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+
+.container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.bg1 {
+    object-fit: cover;
+    width: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    transform: translatey(-40%);
+}
+.bg2 {
+    object-fit: cover;
+    width: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    transform: translate(20%, 10%);
+}
+
